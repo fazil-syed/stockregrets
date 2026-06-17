@@ -278,8 +278,8 @@ Return: +{return_pct:.2f}%
 
 ────────────
 Invested: {formatted_date}
-Buy Price: ${result["buy_price"]:,.2f}
-Today: ${result["current_price"]:,.2f}
+Buy Price: {result["buy_price"]:,.2f} {result["currency"]}
+Today: {result["current_price"]:,.2f} {result["currency"]}
 """
     )
     return ConversationHandler.END
