@@ -8,8 +8,6 @@ COPY pyproject.toml poetry.lock ./
 
 RUN poetry install --no-root --no-interaction
 
-RUN poetry run playwright install chromium
-
 COPY . .
 
 CMD [ "poetry", "run", "python", "-m", "app.main" ]
