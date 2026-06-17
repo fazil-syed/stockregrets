@@ -287,7 +287,7 @@ async def investment(
 ₹{amount:,.0f} → ₹{current_value:,.0f}
 
 Profit: ₹{profit:,.0f}
-Return: +{return_pct:.2f}%
+Return: {return_pct:+.2f}%
 
 ────────────
 Invested: {formatted_date}
