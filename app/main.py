@@ -267,9 +267,15 @@ async def investment(
     ).strftime("%d %b %Y")
 
     if profit > 0:
-        heading = "😬 Missed Opportunity"
+        if profit > 1000:
+            heading = "💀 Generational Fumble"
+        else:
+            heading = "😬 Missed Opportunity"
     elif profit < 0:
-        heading = "📉 Dodged a Bullet"
+        if profit < -50:
+            heading = "🫡 Thank Your Lucky Stars"
+        else:
+            heading = "📉 Dodged a Bullet"
     else:
         heading = "😐 Perfect Timing"
 
