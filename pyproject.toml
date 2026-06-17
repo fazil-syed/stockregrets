@@ -1,0 +1,22 @@
+[project]
+name = "stockregretsbot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Syed Fazil",email = "syedfazil539@gmail.com"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic (>=2.13.4,<3.0.0)",
+    "pydantic-settings (>=2.14.1,<3.0.0)",
+    "python-telegram-bot (>=22.8,<23.0)",
+    "pyyaml (>=6.0.3,<7.0.0)",
+    "python-telegram-bot-calendar (>=1.0.5,<2.0.0)",
+    "requests (>=2.34.2,<3.0.0)",
+    "aiohttp (>=3.14.1,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
