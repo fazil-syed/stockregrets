@@ -266,8 +266,15 @@ async def investment(
         "%Y-%m-%d",
     ).strftime("%d %b %Y")
 
+    if profit > 0:
+        heading = "😬 Missed Opportunity"
+    elif profit < 0:
+        heading = "📉 Dodged a Bullet"
+    else:
+        heading = "😐 Perfect Timing"
+
     await placeholder.edit_text(
-        f"""😬 Missed Opportunity
+        f"""{heading}
 
 {title}
 
